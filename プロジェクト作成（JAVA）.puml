@@ -1,6 +1,0 @@
-@startuml
-start
-:环境安装;
-:使用 Spring Initializr 创建 Spring Boot 项目;
-stop
-@enduml
