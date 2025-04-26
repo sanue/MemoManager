@@ -1,0 +1,13 @@
+
+
+@startuml
+start
+:环境安装;
+:使用 Spring Initializr 创建 Spring Boot 项目;
+if (是否成功?) then (是)
+  :完成;
+else (否)
+  :重试;
+endif
+stop
+@enduml
