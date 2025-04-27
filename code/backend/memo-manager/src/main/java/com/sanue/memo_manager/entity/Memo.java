@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "memos")
+@Table(name = "memo")
 public class Memo {
 
     @Id
@@ -22,8 +22,6 @@ public class Memo {
 
     @Column(nullable = false)
     private LocalDateTime updatedAt;
-
-    // Getters and Setters
 
     // Getters and Setters
     public Integer getId() {
