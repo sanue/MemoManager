@@ -32,7 +32,6 @@ MemoManager
 │           │   ├── java/    # Javaコード
 │           │   └── resources/ # リソースファイル
 │           └── test/        # テストコード
-├── tests/                   # テストコードディレクトリ
 ├── .gitignore               # Git 無視ファイル
 ├── LICENSE                  # ライセンスファイル
 └── README.md                # プロジェクト概要ファイル
@@ -48,5 +47,36 @@ MemoManager
   H2
 - **テスト**: JUnit 5(spring-boot-starter-test)
 
-## 実行方法
+## 環境構築
+
+### フロントエンド
+
+1. **依存関係のインストール**:
+   cd frontend
+   npm install
+2. **開発サーバー起動**:
+   npm run dev
+3. **主要スクリプト**:
+  npm run dev: 開発サーバーを起動
+  npm run build: 本番用ビルド
+  npm run preview: ビルド後のプレビュー
+
+### バックエンド
+
+1. **依存関係のインストール**:
+  cd backend
+  mvn clean install
+2. **アプリケーションの起動**:
+  mvn spring-boot:run
+3. **主要スクリプト**:
+H2 コンソール: http://localhost:8080/h2-console
+
+### 開発環境
+
+OS: macOS
+エディタ: Visual Studio Code
+Node.js: 20.19.0
+npm: 11.3.0
+Java: 24.0.1
+Maven: 3.9.9
 
