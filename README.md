@@ -57,12 +57,10 @@ MemoManager
 2. **開発サーバー起動**:
    npm run dev
 3. **主要スクリプト**:
-   
-   ```
-  npm run dev: 開発サーバーを起動
+
+  npm run dev: 開発サーバーを起動 
   npm run build: 本番用ビルド
   npm run preview: ビルド後のプレビュー
-  ```
 
 ### バックエンド
 
