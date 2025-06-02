@@ -1,5 +1,6 @@
 package com.sanue.memo_manager.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -24,12 +25,13 @@ public class Memo {
     private LocalDateTime updatedAt;
 
     // Getters and Setters
-    public Integer getId() {
+    @JsonProperty("memoId")
+    public Integer getMemoId() {
         return memoId;
     }
 
-    public void setId(Integer id) {
-        this.memoId = id;
+    public void setMemoId(Integer memoId) {
+        this.memoId = memoId;
     }
 
     public String getTitle() {
